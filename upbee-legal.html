@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UpBee — Legal</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 
+      'Segoe UI', sans-serif;
+    background: #FFFFFF;
+    color: #1A1A2E;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  header {
+    background: #FF4081;
+    padding: 32px 24px;
+    text-align: center;
+  }
+  header .bee { font-size: 48px; margin-bottom: 8px; }
+  header h1 { 
+    color: white; 
+    font-size: 28px; 
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  header p { 
+    color: rgba(255,255,255,0.85); 
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  nav {
+    background: #1A1A2E;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+  nav a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  nav a.active, nav a:hover {
+    color: white;
+    border-bottom-color: #FF4081;
+  }
+
+  .page { display: none; }
+  .page.active { display: block; }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .last-updated {
+    font-size: 12px;
+    color: #B0AFCA;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1A1A2E;
+    margin: 40px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #F0EFF6;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin: 24px 0 8px;
+  }
+
+  p { 
+    color: #444460; 
+    margin-bottom: 14px;
+  }
+
+  ul {
+    color: #444460;
+    padding-left: 20px;
+    margin-bottom: 14px;
+  }
+  ul li { margin-bottom: 6px; }
+
+  .highlight {
+    background: #FFF8EC;
+    border-left: 4px solid #FFB300;
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin: 20px 0;
+  }
+  .highlight p { margin: 0; color: #6B5500; }
+
+  .contact-card {
+    background: #F7F7F9;
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 32px;
+  }
+  .contact-card h3 { margin-top: 0; }
+  .contact-card a {
+    color: #FF4081;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    background: #F7F7F9;
+    border-top: 1px solid #F0EFF6;
+    font-size: 13px;
+    color: #B0AFCA;
+  }
+  footer a { color: #FF4081; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bee">🐝</div>
+  <h1>UpBee</h1>
+  <p>Daily Planner — Legal Information</p>
+</header>
+
+<nav>
+  <a href="#" class="active" onclick="showPage('privacy', this)">
+    Privacy Policy
+  </a>
+  <a href="#" onclick="showPage('terms', this)">
+    Terms of Service
+  </a>
+  <a href="#" onclick="showPage('impressum', this)">
+    Impressum
+  </a>
+</nav>
+
+<!-- ======================== -->
+<!-- PRIVACY POLICY -->
+<!-- ======================== -->
+<div id="privacy" class="page active">
+  <div class="container">
+    <p class="last-updated">Last updated: June 2026</p>
+
+    <div class="highlight">
+      <p>
+        <strong>Short version:</strong> UpBee stores your 
+        habits, goals, mood, and diary entries on your device. 
+        If you create an account, some data syncs to our 
+        secure servers to enable the friends and shared goals 
+        features. We never sell your data.
+      </p>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>
+      UpBee ("we", "our", "us") is a daily planner and 
+      self-care app developed and operated as a sole 
+      proprietorship (Einzelunternehmen) based in Berlin, 
+      Germany. This privacy policy explains how we collect, 
+      use, and protect your personal data in accordance with 
+      the EU General Data Protection Regulation (GDPR / 
+      DSGVO).
+    </p>
+
+    <h2>2. Data we collect</h2>
+
+    <h3>Data stored locally on your device</h3>
+    <p>
+      By default, UpBee stores all personal tracking data 
+      locally on your device using AsyncStorage. This includes:
+    </p>
+    <ul>
+      <li>Habits and habit completion history</li>
+      <li>Daily goals and tasks</li>
+      <li>Mood journal entries and diary text</li>
+      <li>SMART goals and milestones</li>
+      <li>Streak data and progress statistics</li>
+      <li>App preferences and theme settings</li>
+    </ul>
+    <p>
+      This data never leaves your device unless you create 
+      an account and enable social features.
+    </p>
+
+    <h3>Data collected when you create an account</h3>
+    <p>
+      If you choose to create an UpBee account (required 
+      only for the friends and shared goals features), 
+      we collect:
+    </p>
+    <ul>
+      <li>Email address</li>
+      <li>Display name (chosen by you)</li>
+      <li>Avatar emoji and color (chosen by you)</li>
+      <li>Friend code (auto-generated)</li>
+      <li>Shared tasks and their completion status</li>
+      <li>Friend connections</li>
+      <li>Reminders sent between friends</li>
+    </ul>
+
+    <h3>Data we do NOT collect</h3>
+    <ul>
+      <li>Location data</li>
+      <li>Contacts or phone book</li>
+      <li>Camera or microphone access</li>
+      <li>Device identifiers for advertising</li>
+      <li>Behavioral tracking for advertising purposes</li>
+    </ul>
+
+    <h2>3. How we use your data</h2>
+    <ul>
+      <li>To provide and improve the UpBee app</li>
+      <li>To enable the friends and shared goals features</li>
+      <li>To send push notifications you have enabled</li>
+      <li>To maintain your account and authenticate you</li>
+      <li>To respond to support requests</li>
+    </ul>
+    <p>
+      We do not use your data for advertising, profiling, 
+      or selling to third parties under any circumstances.
+    </p>
+
+    <h2>4. Third-party services</h2>
+    <p>UpBee uses the following third-party services:</p>
+    <ul>
+      <li>
+        <strong>Supabase</strong> (EU – Frankfurt region) — 
+        Backend database and authentication for account 
+        holders. Data stored in Germany (eu-central-1). 
+        <a href="https://supabase.com/privacy" 
+          target="_blank" 
+          style="color:#FF4081">
+          Privacy policy
+        </a>
+      </li>
+      <li>
+        <strong>Expo / EAS</strong> — App build and 
+        delivery infrastructure. 
+        <a href="https://expo.dev/privacy" 
+          target="_blank"
+          style="color:#FF4081">
+          Privacy policy
+        </a>
+      </li>
+      <li>
+        <strong>Apple App Store / Google Play Store</strong> — 
+        App distribution. Their privacy policies apply 
+        to the purchase and download process.
+      </li>
+    </ul>
+
+    <h2>5. Data storage and security</h2>
+    <p>
+      Account data is stored on Supabase servers located 
+      in Frankfurt, Germany (EU). We use Row Level Security 
+      (RLS) to ensure users can only access their own data. 
+      All data is transmitted over HTTPS/TLS encryption.
+    </p>
+    <p>
+      Local device data is stored using React Native 
+      AsyncStorage and is protected by your device's 
+      built-in security.
+    </p>
+
+    <h2>6. Your rights (GDPR)</h2>
+    <p>As an EU resident you have the right to:</p>
+    <ul>
+      <li>
+        <strong>Access</strong> — Request a copy of all 
+        data we hold about you
+      </li>
+      <li>
+        <strong>Correction</strong> — Request correction 
+        of inaccurate data
+      </li>
+      <li>
+        <strong>Deletion</strong> — Request deletion of 
+        your account and all associated data
+      </li>
+      <li>
+        <strong>Portability</strong> — Export your data 
+        in a machine-readable format
+      </li>
+      <li>
+        <strong>Objection</strong> — Object to processing 
+        of your data
+      </li>
+      <li>
+        <strong>Withdraw consent</strong> — At any time, 
+        without affecting past processing
+      </li>
+    </ul>
+    <p>
+      To exercise any of these rights, contact us at 
+      the email below. We will respond within 30 days.
+    </p>
+    <p>
+      You also have the right to lodge a complaint with 
+      the Berlin data protection authority 
+      (Berliner Beauftragte für Datenschutz und 
+      Informationsfreiheit).
+    </p>
+
+    <h2>7. Data retention</h2>
+    <p>
+      Local device data is retained until you clear 
+      it in Settings or uninstall the app. Account 
+      data is retained until you delete your account. 
+      You can delete your account at any time from 
+      Settings → Sign out → Delete account, or by 
+      contacting us directly.
+    </p>
+
+    <h2>8. Children's privacy</h2>
+    <p>
+      UpBee is not directed at children under 13. 
+      We do not knowingly collect personal data from 
+      children under 13. If you believe a child has 
+      provided us with personal data, please contact 
+      us immediately.
+    </p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      We may update this privacy policy from time to 
+      time. We will notify you of significant changes 
+      by updating the date at the top of this page. 
+      Continued use of UpBee after changes constitutes 
+      acceptance of the updated policy.
+    </p>
+
+    <div class="contact-card">
+      <h3>Contact us</h3>
+      <p>
+        For privacy requests or questions:<br>
+        <a href="mailto:privacy@upbee.app">
+          privacy@upbee.app
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== -->
+<!-- TERMS OF SERVICE -->
+<!-- ======================== -->
+<div id="terms" class="page">
+  <div class="container">
+    <p class="last-updated">Last updated: June 2026</p>
+
+    <div class="highlight">
+      <p>
+        <strong>Short version:</strong> Use UpBee 
+        responsibly, don't misuse it, and we'll keep 
+        building a great app for you. The app is provided 
+        free of charge and we're not liable for data loss 
+        from device failure.
+      </p>
+    </div>
+
+    <h2>1. Acceptance of terms</h2>
+    <p>
+      By downloading, installing, or using UpBee 
+      ("the App"), you agree to these Terms of Service. 
+      If you do not agree, please do not use the App.
+    </p>
+
+    <h2>2. Description of service</h2>
+    <p>
+      UpBee is a personal productivity and self-care 
+      application that helps you track daily habits, 
+      goals, mood, and journal entries. Optional social 
+      features allow you to share goals and habits with 
+      friends.
+    </p>
+    <p>
+      The App is currently provided free of charge. 
+      We reserve the right to introduce premium features 
+      in future versions.
+    </p>
+
+    <h2>3. User accounts</h2>
+    <p>
+      Creating an account is optional and only required 
+      for social features. If you create an account you are 
+      responsible for:
+    </p>
+    <ul>
+      <li>Keeping your login credentials secure</li>
+      <li>All activity that occurs under your account</li>
+      <li>
+        Providing accurate information (email address)
+      </li>
+    </ul>
+    <p>
+      You may delete your account at any time from 
+      within the App or by contacting us.
+    </p>
+
+    <h2>4. Acceptable use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>
+        Use the App for any illegal or unauthorized purpose
+      </li>
+      <li>
+        Harass, abuse, or harm other users through 
+        the shared goals or reminders features
+      </li>
+      <li>
+        Attempt to reverse engineer, hack, or disrupt 
+        the App or its servers
+      </li>
+      <li>
+        Create fake accounts or impersonate others
+      </li>
+      <li>
+        Use automated scripts or bots to interact 
+        with the App
+      </li>
+    </ul>
+
+    <h2>5. Intellectual property</h2>
+    <p>
+      UpBee and all its content (design, code, graphics, 
+      bee character) are the property of the developer 
+      and protected by applicable intellectual property 
+      laws. You may not copy, modify, distribute, or 
+      create derivative works without written permission.
+    </p>
+    <p>
+      Your personal data (habits, goals, diary entries) 
+      remains your property at all times.
+    </p>
+
+    <h2>6. Disclaimer of warranties</h2>
+    <p>
+      UpBee is provided "as is" without warranties of 
+      any kind. We do not guarantee that:
+    </p>
+    <ul>
+      <li>The App will be available at all times</li>
+      <li>The App will be error-free</li>
+      <li>
+        Data will never be lost (we recommend 
+        regular backups)
+      </li>
+    </ul>
+
+    <h2>7. Limitation of liability</h2>
+    <p>
+      To the maximum extent permitted by law, we shall 
+      not be liable for any indirect, incidental, special, 
+      or consequential damages arising from your use of 
+      UpBee, including loss of data, loss of profits, 
+      or personal injury.
+    </p>
+
+    <h2>8. Governing law</h2>
+    <p>
+      These Terms are governed by the laws of Germany. 
+      Any disputes shall be subject to the exclusive 
+      jurisdiction of the courts of Berlin, Germany.
+    </p>
+
+    <h2>9. Changes to terms</h2>
+    <p>
+      We may update these Terms at any time. Continued 
+      use of the App after changes constitutes acceptance 
+      of the new Terms.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Questions about these Terms:
+    </p>
+
+    <div class="contact-card">
+      <h3>Contact us</h3>
+      <p>
+        <a href="mailto:legal@upbee.app">
+          legal@upbee.app
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== -->
+<!-- IMPRESSUM -->
+<!-- ======================== -->
+<div id="impressum" class="page">
+  <div class="container">
+    <p class="last-updated">
+      Angaben gemäß § 5 TMG
+    </p>
+
+    <h2>Anbieter</h2>
+    <p>
+      <strong>[Dein vollständiger Name]</strong><br>
+      [Straße und Hausnummer]<br>
+      [PLZ] Berlin<br>
+      Deutschland
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail: 
+      <a href="mailto:hello@upbee.app" 
+        style="color:#FF4081">
+        hello@upbee.app
+      </a>
+    </p>
+
+    <h2>Steuernummer</h2>
+    <p>
+      Steuernummer: [Deine Steuernummer]<br>
+      <em>
+        (Wird nach Registrierung beim Finanzamt 
+        ergänzt)
+      </em>
+    </p>
+
+    <h2>Verantwortlich für den Inhalt</h2>
+    <p>
+      [Dein vollständiger Name]<br>
+      Anschrift wie oben
+    </p>
+
+    <h2>Streitschlichtung</h2>
+    <p>
+      Die Europäische Kommission stellt eine Plattform 
+      zur Online-Streitbeilegung (OS) bereit: 
+      <a href="https://ec.europa.eu/consumers/odr" 
+        target="_blank"
+        style="color:#FF4081">
+        https://ec.europa.eu/consumers/odr
+      </a>
+    </p>
+    <p>
+      Wir sind nicht bereit oder verpflichtet, an 
+      Streitbeilegungsverfahren vor einer 
+      Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+
+    <div class="highlight">
+      <p>
+        <strong>Hinweis:</strong> Bitte fülle die 
+        markierten Felder [in eckigen Klammern] mit 
+        deinen persönlichen Daten aus, bevor du diese 
+        Seite veröffentlichst. Das Impressum ist 
+        gesetzlich vorgeschrieben (§ 5 TMG).
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    © 2026 UpBee — Daily Planner · Berlin, Germany<br>
+    <a href="#" onclick="showPage('privacy', 
+      document.querySelector('nav a'))">
+      Privacy Policy
+    </a> · 
+    <a href="#" onclick="showPage('terms', 
+      document.querySelectorAll('nav a')[1])">
+      Terms of Service
+    </a> · 
+    <a href="#" onclick="showPage('impressum', 
+      document.querySelectorAll('nav a')[2])">
+      Impressum
+    </a>
+  </p>
+</footer>
+
+<script>
+  function showPage(id, link) {
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(p => {
+      p.classList.remove('active');
+    });
+    // Remove active from all nav links
+    document.querySelectorAll('nav a').forEach(a => {
+      a.classList.remove('active');
+    });
+    // Show selected page
+    document.getElementById(id).classList.add('active');
+    // Highlight nav link
+    if (link) link.classList.add('active');
+    // Scroll to top
+    window.scrollTo(0, 0);
+    return false;
+  }
+</script>
+
+</body>
+</html>
